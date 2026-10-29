@@ -34,7 +34,7 @@ Your **ORM** solution. Do not delete or move basic interfaces.
 
 You may create your own REST controller interfaces on the base of the BaseController interface.
 
-Use Spring Boot starter: `org.springframework.boot:spring-boot-starter-web` for implementing REST functionality.
+Use Spring Boot starter: `org.springframework.boot:spring-boot-starter-webmvc` for implementing REST functionality.
 
 #### Operations
 
@@ -83,7 +83,7 @@ For example: [Mapstruct](https://mapstruct.org/), [Modelmapper](http://modelmapp
 
 All input parameters (requests) should be validated directly in business logic code via custom validation or spring functionality.
 >Note: to support your custom annotations and perform validation outside of business logic code you can use
-> e.g. [Aspects](https://docs.spring.io/spring-framework/docs/5.3.x/reference/html/core.html#aop).
+> e.g. [Aspects](https://docs.spring.io/spring-framework/reference/7.0/core/aop.html).
 
 #### Testing
 
@@ -104,8 +104,8 @@ All input parameters (requests) should be validated directly in business logic c
 
 #### Application requirements:
 
-1. Java 17 should be used.
-2. Gradle. Multi-module project. Spring Boot.
+1. Java 25 should be used.
+2. Gradle 9.1.0. Multi-module project. Spring Boot 4.
 3. Application packages root: `com.mjc.school`.
 4. Java Code Convention is mandatory.
 
